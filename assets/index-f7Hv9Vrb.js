@@ -15263,7 +15263,7 @@ const kt = !1,
   aS = {
     name: "Pons Cat",
     ticker: "PONSCAT",
-    contractAddress: "0xComingSoon",
+    contractAddress: "0x7428aa3cd53902998656d771ebf0c85e7981ab92",
     chain: "Robinhood",
     explorerTxBase: "https://robinhoodchain.blockscout.com/tx/",
     explorerAddressBase: "https://robinhoodchain.blockscout.com/address/",
