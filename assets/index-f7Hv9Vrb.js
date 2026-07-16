@@ -16329,40 +16329,7 @@ function TS({ token: e, stats: t, statsLoading: n, onScrollTo: r }) {
                     "relative z-10 glass-title text-6xl md:text-7xl leading-[0.85]",
                   children: (e == null ? void 0 : e.name) || "Pons Cat",
                 }),
-                d.jsxs("div", {
-                  className:
-                    "relative z-10 mt-5 flex flex-col items-start rounded-2xl panel-green text-white px-6 py-4 shadow-glass w-full max-w-[60%] sm:max-w-[55%]",
-                  children: [
-                    d.jsxs("span", {
-                      className:
-                        "chip bg-white text-ink !py-0.5 !px-2.5 !text-xs mb-2",
-                      children: [
-                        d.jsx("span", {
-                          className:
-                            "w-2.5 h-2.5 rounded-full bg-glass-green animate-flash",
-                        }),
-                        " MARKET CAP",
-                      ],
-                    }),
-                    d.jsx("span", {
-                      className:
-                        "comic-title text-5xl md:text-6xl text-white leading-none tabular-nums drop-shadow-[0_2px_6px_rgba(0,0,0,0.25)]",
-                      children: n
-                        ? d.jsx("span", {
-                            className: "animate-flash",
-                            children: "$····",
-                          })
-                        : i
-                        ? d.jsx(og, {
-                            value: i.value,
-                            decimals: i.decimals,
-                            prefix: "$",
-                            suffix: i.suffix,
-                          })
-                        : d.jsx("span", { children: "Coming soon" }),
-                    }),
-                  ],
-                }),
+                
               ],
             }),
             d.jsxs(O.div, {
@@ -16614,111 +16581,7 @@ function CS({ stats: e, loading: t }) {
       tag: "+ BURNING",
     },
   ];
-  return d.jsxs("section", {
-    id: "powers",
-    className:
-      "relative py-16 md:py-24 bg-gradient-to-b from-glass-mist to-glass-haze overflow-hidden",
-    children: [
-      d.jsx("div", {
-        className:
-          "blob w-[32rem] h-[32rem] -left-40 top-4 bg-glass-sage animate-drift-blob opacity-50",
-      }),
-      d.jsx("div", {
-        className:
-          "blob w-[28rem] h-[28rem] -right-32 bottom-0 bg-glass-mint animate-drift-blob opacity-40",
-      }),
-      d.jsxs("div", {
-        className: "relative mx-auto max-w-6xl px-4",
-        children: [
-          d.jsx(eo, {
-            kicker: "By The Numbers",
-            title: "PONS CAT STATS",
-            color: "text-glass-jade",
-          }),
-          d.jsx("div", {
-            className: "grid sm:grid-cols-3 gap-6",
-            children: n.map((r, i) => {
-              const s = i === 1 ? 0 : i === 0 ? -1.5 : 1.5;
-              return d.jsx(
-                "div",
-                {
-                  className: "animate-float",
-                  style: { animationDelay: `${i * 0.6}s` },
-                  children: d.jsxs(O.div, {
-                    initial: { opacity: 0, y: 40, scale: 0.94, rotate: s * 2 },
-                    whileInView: { opacity: 1, y: 0, scale: 1, rotate: s },
-                    viewport: { once: !0, margin: "-60px" },
-                    transition: {
-                      type: "spring",
-                      stiffness: 120,
-                      damping: 14,
-                      delay: i * 0.1,
-                    },
-                    whileHover: {
-                      scale: 1.04,
-                      rotate: 0,
-                      y: -8,
-                      boxShadow: "0 24px 60px -12px rgba(63,114,86,0.35)",
-                    },
-                    className: `panel ${r.color} ${r.text} p-6 overflow-hidden`,
-                    children: [
-                      d.jsx("div", {
-                        className:
-                          "absolute -right-6 -top-6 text-8xl opacity-20 rotate-12 select-none pointer-events-none",
-                        children: r.icon,
-                      }),
-                      d.jsx(NS, { delay: i * 0.1 + 0.3 }),
-                      d.jsxs("div", {
-                        className:
-                          "relative flex items-center gap-2 mb-4 flex-wrap",
-                        children: [
-                          d.jsx("span", {
-                            className: "chip bg-white text-ink",
-                            children: r.label,
-                          }),
-                          d.jsxs(O.span, {
-                            className:
-                              "chip bg-ink text-glass-mint !py-0.5 !text-[11px] font-display tracking-wide",
-                            animate: { scale: [1, 1.12, 1] },
-                            transition: {
-                              duration: 1.4,
-                              repeat: 1 / 0,
-                              ease: "easeInOut",
-                            },
-                            children: ["▲ ", r.tag],
-                          }),
-                        ],
-                      }),
-                      d.jsx("div", {
-                        className:
-                          "comic-title text-4xl sm:text-5xl md:text-6xl leading-none relative",
-                        children: t
-                          ? d.jsx("span", {
-                              className: "animate-flash",
-                              children: "····",
-                            })
-                          : d.jsx(og, {
-                              value: r.value,
-                              decimals: r.decimals,
-                              suffix: r.suffix || "",
-                            }),
-                      }),
-                      d.jsx("p", {
-                        className:
-                          "font-display tracking-wide text-xl mt-2 opacity-90 relative",
-                        children: r.sub,
-                      }),
-                    ],
-                  }),
-                },
-                r.sub
-              );
-            }),
-          }),
-        ],
-      }),
-    ],
-  });
+
 }
 function NS({ delay: e = 0 }) {
   return d.jsxs("svg", {
