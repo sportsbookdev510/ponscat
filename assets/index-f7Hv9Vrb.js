@@ -15967,10 +15967,8 @@ function ri({
   });
 }
 const uf = [
-    { href: "#powers", label: "PONS CAT STATS" },
     { href: "#how", label: "How It Works" },
     { href: "#eligibility", label: "Eligibility" },
-    { href: "#drops", label: "Live Distribution" },
   ],
   Ii = "#3f7256",
   cf = {
